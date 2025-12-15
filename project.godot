@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="cardaemon-tactical-order"
+config/name="cardmon"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
