@@ -959,7 +959,7 @@ async def call_tool(name: str, arguments: Any) -> list[TextContent | ImageConten
     if name == "check_godot_running":
         try:
             async with httpx.AsyncClient(timeout=2.0) as client:
-                response = await client.get(f"{GODOT_BASE_URL}/project_info")
+                response = await client.post(f"{GODOT_BASE_URL}/api/project/info", json={})
                 return [TextContent(
                     type="text",
                     text=json.dumps({

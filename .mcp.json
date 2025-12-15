@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "godot-mcp-enhanced": {
+      "command": "uv",
+      "args": ["run", "mcp-server"],
+      "cwd": "addons/godot_mcp_enhanced/python",
+      "env": {
+        "GODOT_HOST": "127.0.0.1",
+        "GDAI_MCP_SERVER_PORT": "3571"
+      }
+    }
+  }
+}
