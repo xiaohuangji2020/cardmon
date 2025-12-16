@@ -23,3 +23,7 @@ def show_love():
 # Running...
 # 叽 v
 ```
+
+<div align="center">
+  <img src="readme.svg" width="200" alt="叽 v 爱心">
+</div>
