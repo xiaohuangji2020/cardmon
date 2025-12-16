@@ -1,9 +1,8 @@
 {
   "mcpServers": {
     "godot-mcp-enhanced": {
-      "command": "uv",
-      "args": ["run", "mcp-server"],
-      "cwd": "addons/godot_mcp_enhanced/python",
+      "command": "/Users/dongjiawen/.local/bin/uv",
+      "args": ["run", "--directory", "/Volumes/MacintoshData/mine/cardmon/addons/godot_mcp_enhanced/python", "mcp-server"],
       "env": {
         "GODOT_HOST": "127.0.0.1",
         "GDAI_MCP_SERVER_PORT": "3571"
