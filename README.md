@@ -24,6 +24,7 @@ def show_love():
 # 叽 v
 ```
 
-<div align="center">
-  <img src="readme.svg" width="200" alt="叽 v 爱心">
-</div>
+宝可梦 + 实时探索 +SRPG 回合制方格战斗（战棋）
+CTB回合制
+缝合数码宝贝三的刷卡强化机制
+HD-2D像素，视口大小：640 x 360
