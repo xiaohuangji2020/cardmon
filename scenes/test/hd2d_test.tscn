@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv6sr0qmil4vk"]
+
+[ext_resource type="Texture2D" uid="uid://c8a47v783pph2" path="res://icon.svg" id="1_icon"]
+[ext_resource type="Script" path="res://scenes/test/test_sprite_controller.gd" id="2_script"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ground"]
+size = Vector2(20, 20)
+
+[node name="HD2DTest" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 8, 8)
+projection = 1
+size = 11.25
+
+[node name="Ground" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_ground")
+
+[node name="TestSprite" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+pixel_size = 0.03125
+billboard = 1
+texture_filter = 0
+texture = ExtResource("1_icon")
+script = ExtResource("2_script")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.877583, -0.364705, 0.312325, 0, 0.650288, 0.759688, -0.479426, -0.666761, 0.570619, 0, 5, 0)
