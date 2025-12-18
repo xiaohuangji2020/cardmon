@@ -1,43 +1,46 @@
 # Cardmon Project Overview
 
-## Purpose
-Cardmon is a Godot 4.5 game project with an integrated MCP (Model Context Protocol) enhanced plugin for AI assistant integration.
+## Project Purpose
+Cardmon is a Godot 3D game project combining:
+- Pokémon-style gameplay
+- Real-time exploration
+- SRPG turn-based grid combat (tactical/strategy RPG)
+- CTB (Charge Turn Battle) turn system
+- Card-based enhancement mechanics inspired by Digimon 3
+- HD-2D pixel art style
 
 ## Tech Stack
 - **Engine**: Godot 4.5 (Forward Plus rendering)
-- **Language**: GDScript (Godot scripting language)
-- **MCP Integration**: godot_mcp_enhanced plugin v1.0.0
-- **Configuration**: JSON-based config (godot_mcp_config.json)
+- **Language**: GDScript
+- **Viewport**: 640 x 360 pixels
+- **Rendering**: 2D with pixel-perfect snapping
+- **Plugins**: Godot MCP Enhanced (for editor integration and MCP server support)
 
 ## Project Structure
-```
-cardmon/
-├── addons/
-│   └── godot_mcp_enhanced/
-│       ├── plugin.gd (main plugin entry point)
-│       ├── plugin.cfg (plugin metadata)
-│       ├── http_server.gd (HTTP server for MCP)
-│       ├── file_operations.gd
-│       ├── script_operations.gd
-│       ├── scene_operations.gd
-│       ├── runtime_operations.gd
-│       ├── debugger_integration.gd
-│       ├── screenshot_manager.gd
-│       ├── python/ (Python MCP server components)
-│       └── ui/ (UI components including bottom_panel.gd)
-├── godot_mcp_config.json (MCP configuration)
-├── project.godot (Godot project config)
-└── icon.svg (project icon)
-```
-
-## MCP Configuration
-- MCP Server Port: 3571
-- Runtime Server Port: 3572
-- Auto Screenshot: enabled
-- Screenshot on Error: enabled
-- Screenshot on Scene Change: enabled
+- `addons/godot_mcp_enhanced/` - MCP plugin for editor integration and remote operations
+  - `plugin.gd` - Main plugin entry point
+  - `http_server.gd` - HTTP server for MCP communication
+  - `scene_operations.gd` - Scene manipulation operations
+  - `script_operations.gd` - Script operations
+  - `screenshot_manager.gd` - Screenshot capture
+  - `debugger_integration.gd` - Debugger integration
+  - `file_operations.gd` - File operations
+  - `runtime_operations.gd` - Runtime operations
+  - `ui/bottom_panel.tscn` - Editor UI panel
+- `project.godot` - Godot project configuration
+- `.editorconfig` - Editor configuration (UTF-8 charset)
 
 ## Code Style & Conventions
-- GDScript (Godot's Python-like scripting language)
-- File naming: snake_case.gd for scripts
-- Plugin architecture with modular components
+- **Language**: GDScript (Godot's Python-like scripting language)
+- **Indentation**: Tabs (as seen in plugin.gd)
+- **Type Hints**: Used (e.g., `func _enter_tree() -> void:`)
+- **Naming**: snake_case for functions and variables, PascalCase for classes
+- **Constants**: UPPER_CASE (e.g., `const HTTPServer = preload(...)`)
+- **Preloading**: Used for class definitions
+- **Annotations**: @tool for editor scripts
+
+## Important Notes
+- Project uses Godot 4.5 features
+- Pixel-perfect rendering enabled (2d/snap/snap_2d_transforms_to_pixel=true)
+- Default texture filter set to nearest (textures/canvas_textures/default_texture_filter=0)
+- MCP plugin provides remote editor control capabilities
