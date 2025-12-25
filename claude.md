@@ -9,8 +9,8 @@
 - HD-2D像素，视口大小：640 x 360
 
 ### 项目文档
-- 开发文档：DEVELOPMENT_PLAN.md
-- 架构设计文档：ARCHITECTURE.md
+- 开发文档：docs/ai/DEVELOPMENT_PLAN.md
+- 架构设计文档：docs/ai/ARCHITECTURE.md
 - 语法错误记录本：docs/mistake/mistake_notebook.md
 
 ### 注意事项
