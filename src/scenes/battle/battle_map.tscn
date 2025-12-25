@@ -11,9 +11,6 @@ script = ExtResource("1_k1jhs")
 
 [node name="Map00" parent="." instance=ExtResource("2_aobbg")]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-shadow_enabled = true
-
 [node name="CameraRig" parent="." instance=ExtResource("2_vo8vu")]
 
 [node name="Unit" parent="." instance=ExtResource("3_llwba")]

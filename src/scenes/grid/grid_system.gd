@@ -1,7 +1,7 @@
 extends Node3D
 
 # 预载高亮色块的小场景
-const HIGH_LIGHT_CELL = preload("res://src/scenes/grid/highlight_cell.tscn")
+const HIGHLIGHT_CELL = preload("res://src/scenes/grid/highlight_cell.tscn")
 
 @onready var container = $HighlightContainer
 
@@ -18,7 +18,7 @@ func display_range(cells: Array[Vector2i], type: String):
 		color = Color(1.0, 0.2, 0.2, 0.5) # 红色
 
 	for pos in cells:
-		var cell = HIGH_LIGHT_CELL.instantiate()
+		var cell = HIGHLIGHT_CELL.instantiate()
 		container.add_child(cell)
 
 		# 坐标转换逻辑（2.0是格子大小）
