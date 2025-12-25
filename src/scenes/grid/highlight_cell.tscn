@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2yt41cs1b4sm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e23kq"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0.23000002, 0.49949992, 1, 0.39215687)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_80qw7"]
+material = SubResource("StandardMaterial3D_e23kq")
+
+[node name="HighlightCell" type="MeshInstance3D"]
+mesh = SubResource("PlaneMesh_80qw7")

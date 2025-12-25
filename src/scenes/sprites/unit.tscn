@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dc6qf8onawpll"]
+
+[ext_resource type="Script" uid="uid://dmgujxci74cf8" path="res://src/scenes/sprites/unit.gd" id="1_7pxuu"]
+[ext_resource type="Texture2D" uid="uid://dx6ovqw35w03g" path="res://assets/sprites/pokemon/yellow_character.png" id="2_oxs1u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sjbpv"]
+
+[node name="Unit" type="CharacterBody3D"]
+script = ExtResource("1_7pxuu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("BoxShape3D_sjbpv")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+billboard = 2
+texture_filter = 0
+texture = ExtResource("2_oxs1u")

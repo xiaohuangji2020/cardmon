@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bqxk8y7h8qw0c"]
 
-[ext_resource type="Script" uid="uid://uc61wxjgxj5t" path="res://scenes/test/test_sprite.gd" id="1_test"]
+[ext_resource type="Script" uid="uid://uc61wxjgxj5t" path="res://src/scenes/test/test_sprite.gd" id="1_test"]
 [ext_resource type="Texture2D" uid="uid://c8a47v783pph2" path="res://icon.svg" id="2_icon"]
-[ext_resource type="Script" uid="uid://crbu457mqamh5" path="res://scenes/test/camera_controller.gd" id="3_camera"]
+[ext_resource type="Script" uid="uid://crbu457mqamh5" path="res://src/scenes/test/camera_controller.gd" id="3_camera"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_ground"]
 size = Vector2(10, 10)

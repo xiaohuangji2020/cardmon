@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://ckxox8ne2vp85"]
+
+[ext_resource type="Script" uid="uid://cfxirag1sgv0u" path="res://src/scenes/grid/grid_system.gd" id="1_gkac4"]
+[ext_resource type="Shader" uid="uid://ck3trme5b5jsq" path="res://src/scenes/grid/grid.gdshader" id="2_i8rn2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_t0g77"]
+render_priority = 0
+shader = ExtResource("2_i8rn2")
+shader_parameter/grid_color = Color(0.5, 0.5, 0.5, 1)
+shader_parameter/line_thickness = 0.02
+shader_parameter/grid_size = 2.0
+shader_parameter/world_size = 20.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gkac4"]
+material = SubResource("ShaderMaterial_t0g77")
+size = Vector2(20, 20)
+
+[node name="GridSystem" type="Node3D"]
+script = ExtResource("1_gkac4")
+
+[node name="StaticGrid" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_gkac4")
+
+[node name="HighlightContainer" type="Node3D" parent="."]
