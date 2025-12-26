@@ -13,9 +13,9 @@ func clear_all():
 # 核心函数：显示范围
 # type: "move" 为蓝色, "attack" 为红色
 func display_range(cells: Array[Vector2i], type: String):
-	var color = Color(0.2, 0.4, 1.0, 0.5) # 默认蓝色
+	var color = Color(0.2, 0.653, 1.0, 0.5) # 默认蓝色
 	if type == "attack":
-		color = Color(1.0, 0.2, 0.2, 0.5) # 红色
+		color = Color(1.0, 0.2, 0.453, 0.5) # 红色
 
 	for pos in cells:
 		var cell = HIGHLIGHT_CELL.instantiate()

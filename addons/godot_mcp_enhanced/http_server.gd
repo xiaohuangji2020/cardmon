@@ -2,7 +2,7 @@
 extends Node
 
 # Debug mode - set to true for verbose logging
-const DEBUG = true
+const DEBUG = false
 
 var tcp_server: TCPServer
 var port: int = 3571

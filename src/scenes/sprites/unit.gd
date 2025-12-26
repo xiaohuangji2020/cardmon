@@ -5,12 +5,11 @@ class_name GameUnit  # 给个类名，方便以后其他脚本识别它
 # 移动速度 (做动画用)
 @export var move_speed: float = 5.0
 # 格子大小 (必须和你的地面网格匹配)
-const GRID_SIZE: float = 2.0
+var GRID_SIZE: float = GameConfig.grid_size
 
 # --- 核心状态 ---
 # 逻辑坐标：它现在在第几行第几列？
 var grid_pos: Vector2i = Vector2i(0, 0)
-
 # 目标世界坐标：动画要飘去哪里？
 var target_world_pos: Vector3
 

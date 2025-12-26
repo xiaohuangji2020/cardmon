@@ -27,7 +27,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.pressed:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			# 1. 射线检测：看点中了什么
-			var hit = _do_raycast()
+			var hit = PhysicsUtil.mouse_raycast(get_viewport())
 			if hit:
 				if hit is GameUnit:
 					_on_unit_clicked(hit)
@@ -36,18 +36,6 @@ func _unhandled_input(event: InputEvent) -> void:
 			else:
 				_deselect()
 
-# 射线检测逻辑
-func _do_raycast():
-	var mouse_pos = get_viewport().get_mouse_position()
-	var camera = get_viewport().get_camera_3d()
-	var from = camera.project_ray_origin(mouse_pos)
-	var to = from + camera.project_ray_normal(mouse_pos) * 1000.0
-
-	var space_state = get_world_3d().direct_space_state
-	var query = PhysicsRayQueryParameters3D.create(from, to)
-	var result = space_state.intersect_ray(query)
-
-	return result.collider if result else null
 
 # 当点中一个小人
 func _on_unit_clicked(unit: GameUnit):
@@ -56,7 +44,7 @@ func _on_unit_clicked(unit: GameUnit):
 	print("选中了: ", unit.name)
 
 	# 展示范围
-	#grid_system.display_range(unit.get_attack_cells(), 'attack') # 先画大圈红色
+	grid_system.display_range(unit.get_attack_cells(), 'attack') # 先画大圈红色
 	grid_system.display_range(unit.get_move_cells(), '')    # 再画小圈蓝色
 
 # 当点中地板（后续寻路逻辑在此扩展）

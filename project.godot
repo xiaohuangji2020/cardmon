@@ -15,6 +15,10 @@ run/main_scene="uid://bhuiyg4wdf1ar"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameConfig="*res://src/autoload/constant/game_config.gd"
+
 [display]
 
 window/size/viewport_width=640
@@ -57,3 +61,10 @@ cam_rotate_mode={
 
 textures/canvas_textures/default_texture_filter=0
 2d/snap/snap_2d_transforms_to_pixel=true
+
+[shader_globals]
+
+grid_size={
+"type": "float",
+"value": 0.0
+}

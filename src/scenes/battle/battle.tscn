@@ -1,3 +1,21 @@
-[gd_scene format=3 uid="uid://bgmhls6egfaa4"]
+[gd_scene load_steps=7 format=3 uid="uid://bhuiyg4wdf1ar"]
+
+[ext_resource type="PackedScene" uid="uid://btmyv7ocb508p" path="res://src/scenes/light/battle_light.tscn" id="1_5k1g7"]
+[ext_resource type="Script" uid="uid://b4rg0680ur25" path="res://src/scenes/battle/battle.gd" id="1_jd7hn"]
+[ext_resource type="PackedScene" uid="uid://k13jr6lak5pw" path="res://src/scenes/map/map_0_0.tscn" id="2_jd7hn"]
+[ext_resource type="PackedScene" uid="uid://b1evhpxh5oarm" path="res://src/scenes/camera/battle_camera.tscn" id="3_d7n1l"]
+[ext_resource type="PackedScene" uid="uid://dc6qf8onawpll" path="res://src/scenes/sprites/unit.tscn" id="4_nw7oo"]
+[ext_resource type="PackedScene" uid="uid://ckxox8ne2vp85" path="res://src/scenes/grid/grid_system.tscn" id="5_0n355"]
 
 [node name="Battle" type="Node3D"]
+script = ExtResource("1_jd7hn")
+
+[node name="DirectionalLight3D" parent="." instance=ExtResource("1_5k1g7")]
+
+[node name="Map00" parent="." instance=ExtResource("2_jd7hn")]
+
+[node name="GridSystem" parent="." instance=ExtResource("5_0n355")]
+
+[node name="Unit" parent="." instance=ExtResource("4_nw7oo")]
+
+[node name="CameraRig" parent="." instance=ExtResource("3_d7n1l")]
