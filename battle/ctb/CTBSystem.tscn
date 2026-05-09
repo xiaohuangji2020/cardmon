@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b5wov6ie2l0pb"]
+
+[ext_resource type="Script" uid="uid://bgpu8a3ho7pbs" path="res://battle/ctb/CTBSystem.gd" id="1_mcpe7"]
+
+[node name="CTBSystem" type="Node" unique_id=1751278176]
+script = ExtResource("1_mcpe7")

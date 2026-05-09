@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SkillData" format=3 uid="uid://btwvlo13e7ump"]
+
+[ext_resource type="Script" uid="uid://ki23nlv551pr" path="res://skills/SkillData.gd" id="1_spb7o"]
+
+[resource]
+script = ExtResource("1_spb7o")
+skill_name = "撞击"
+metadata/_custom_type_script = "uid://ki23nlv551pr"

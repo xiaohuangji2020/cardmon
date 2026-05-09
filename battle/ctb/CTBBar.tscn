@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://def3lg2d0m2bc"]
+
+[ext_resource type="Script" uid="uid://dsn6mthhj2xtw" path="res://battle/ctb/CTBBar.gd" id="1_fkh0q"]
+
+[node name="CTBBar" type="Control" unique_id=343208990]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_fkh0q")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2085996657]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

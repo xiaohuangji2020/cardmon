@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="UnitData" format=3 uid="uid://fvc6a85s5tnk"]
+
+[ext_resource type="Script" uid="uid://biqveb5rsf4h7" path="res://units/data/UnitData.gd" id="1_8ekrk"]
+[ext_resource type="Resource" uid="uid://btwvlo13e7ump" path="res://skills/tres/tackle.tres" id="2_5rec6"]
+
+[resource]
+script = ExtResource("1_8ekrk")
+unit_name = "野怪b"
+color = Color(0.80853915, 0.6781683, 0.9599256, 1)
+skills = Array[Resource]([ExtResource("2_5rec6")])
+metadata/_custom_type_script = "uid://biqveb5rsf4h7"

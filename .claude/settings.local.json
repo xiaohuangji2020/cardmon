@@ -3,7 +3,8 @@
     "allow": [
       "mcp__notion__notion-fetch",
       "mcp__notion__notion-update-page",
-      "mcp__notion__notion-search"
+      "mcp__notion__notion-search",
+      "Bash(xargs ls *)"
     ]
   }
 }

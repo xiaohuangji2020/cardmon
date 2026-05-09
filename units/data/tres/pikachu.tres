@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UnitData" format=3 uid="uid://8186ytcs4lpm"]
+
+[ext_resource type="Script" uid="uid://biqveb5rsf4h7" path="res://units/data/UnitData.gd" id="1_57qse"]
+[ext_resource type="Resource" uid="uid://btwvlo13e7ump" path="res://skills/tres/tackle.tres" id="2_01qwu"]
+[ext_resource type="Resource" uid="uid://b2turnjb52ipo" path="res://skills/tres/thunderShock.tres" id="3_yl42h"]
+
+[resource]
+script = ExtResource("1_57qse")
+unit_name = "皮卡丘"
+unit_type = 1
+speed = 60.0
+color = Color(0.7484979, 0.77233404, 0.48358357, 1)
+skills = Array[Resource]([ExtResource("2_01qwu"), ExtResource("3_yl42h")])
+metadata/_custom_type_script = "uid://biqveb5rsf4h7"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UnitData" format=3 uid="uid://dvnvby2lvi58f"]
+
+[ext_resource type="Script" uid="uid://biqveb5rsf4h7" path="res://units/data/UnitData.gd" id="1_taoxx"]
+[ext_resource type="Resource" uid="uid://btwvlo13e7ump" path="res://skills/tres/tackle.tres" id="2_frtjq"]
+
+[resource]
+script = ExtResource("1_taoxx")
+unit_name = "野怪A"
+speed = 10.0
+color = Color(0.9473501, 0.66210943, 0.62569875, 1)
+skills = Array[Resource]([ExtResource("2_frtjq")])
+metadata/_custom_type_script = "uid://biqveb5rsf4h7"
