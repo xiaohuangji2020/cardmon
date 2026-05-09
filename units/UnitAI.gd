@@ -25,7 +25,7 @@ static func run(enemy: Unit, grid_manager: GridManager, all_units: Array[Unit]) 
 	if enemy.data.skills.is_empty():
 		return
 	var skill: SkillData = enemy.data.skills[0]
-	var attack_cells: Array[Vector2i] = grid_manager.get_attack_range(enemy.grid_pos, skill.range)
+	var attack_cells: Array[Vector2i] = grid_manager.get_attack_range(enemy.grid_pos, skill.atk_range)
 	
 	if target.grid_pos in attack_cells:
 		var damage := skill.damage + enemy.data.attack

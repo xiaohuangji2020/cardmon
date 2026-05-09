@@ -7,6 +7,7 @@
 script = ExtResource("1_pvoxg")
 unit_name = "训练师"
 unit_type = 0
+speed = 40.0
 color = Color(0.416459, 0.8231614, 0.81871074, 1)
 skills = Array[Resource]([ExtResource("2_ufw2r")])
 metadata/_custom_type_script = "uid://biqveb5rsf4h7"

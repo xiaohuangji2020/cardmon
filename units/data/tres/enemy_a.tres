@@ -6,6 +6,7 @@
 [resource]
 script = ExtResource("1_taoxx")
 unit_name = "野怪A"
+speed = 10.0
 color = Color(0.9473501, 0.66210943, 0.62569875, 1)
 skills = Array[Resource]([ExtResource("2_frtjq")])
 metadata/_custom_type_script = "uid://biqveb5rsf4h7"

@@ -100,7 +100,7 @@ func _on_skill_pressed() -> void:
 		return
 	_action_state = Enums.ActionState.SELECTING_SKILL
 	var skill: SkillData = _active_unit.data.skills[0]
-	_attack_cells = grid_manager.get_attack_range(_active_unit.grid_pos, skill.range)
+	_attack_cells = grid_manager.get_attack_range(_active_unit.grid_pos, skill.atk_range)
 	grid_manager.highlight_cells(_attack_cells, GridManager.COLOR_ATTACK)
 	action_menu.hide_menu()
 
